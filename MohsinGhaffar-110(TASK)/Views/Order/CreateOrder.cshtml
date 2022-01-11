@@ -1,0 +1,27 @@
+﻿<form class="container" method="post" action="CreateOrder">
+    <div>
+        <h1 class="text-center">Welcome to our Departmental Store </h1>
+    </div>
+
+    <div class="form-outline mb-4">
+        <label class="form-label" for="stroename">Store Name</label>
+        <input type="text" id="stroename" name="stroename" required class="form-control" />
+    </div>
+
+
+    <div class="form-outline mb-4">
+        <label class="form-label" for="DsQty">Description Quantity</label>
+        <textarea class="form-control" name="DsQty" id="DsQty" required rows="4"></textarea>
+    </div>
+
+    <div class="form-outline mb-4">
+        <label class="form-label" for="itemprice">Price of Item</label>
+        <input type="number" id="itemprice" name="itemprice" required class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-block mb-4">Create Order</button>
+</form>
+
+<h1>@ViewBag.storename</h1>
+<h1>@ViewBag.DsQty</h1>
+<h1>@ViewBag.itemprice</h1>
